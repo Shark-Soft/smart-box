@@ -19,7 +19,24 @@ function App() {
     connectSocket(socket)
   }, [])
 
-  return <p>It's</p>
+  return (
+    <main>
+      <h1 className="title">Estado de caja fuerte:</h1>
+      <section className="info-section">
+        <p>
+          Puerta: <span>{}</span>
+        </p>
+        <p>
+          Temperatura: <span>{}</span>
+        </p>
+      </section>
+      <section className="map-section">
+        <iframe src="" frameborder="0"></iframe>
+      </section>
+      <section className="status-section"></section>
+      <section className="img-section"></section>
+    </main>
+  )
 }
 
 export default App
