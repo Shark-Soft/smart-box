@@ -92,7 +92,7 @@ function Box({ owner = false }) {
     getInfo()
   }, [token])
   const sendResponse = async (value) => {
-    const data = { confirmation: value }
+    const data = { confirmation: value, password: 0 }
     await fetch(
       `https://industrial.api.ubidots.com/api/v1.6/devices/smart-box${id}`,
       {
@@ -105,6 +105,7 @@ function Box({ owner = false }) {
         body: JSON.stringify(data),
       }
     )
+    window.location.reload()
   }
   const modalPass = () => (
     <section className="status-section">
