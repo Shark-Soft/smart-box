@@ -150,7 +150,7 @@ function Box({ owner = false }) {
           <p>
             Puerta:{' '}
             <span className="highligth">
-              {state.dist > 1 ? 'Abierta' : 'Cerrada'}
+              {state.dist > 2 ? 'Abierta' : 'Cerrada'}
             </span>{' '}
             distancia(
             {state.dist})
