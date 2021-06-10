@@ -1,3 +1,9 @@
 h1 {
-  font-size: 36px;
+  font-size: 40px;
+  font-weight: 400;
+}
+.home-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
